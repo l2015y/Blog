@@ -1,0 +1,86 @@
+<div class="left-content">
+    <div style="height: 138px;">
+        <img src="images/0_7599.jpg">
+    </div>
+</div>
+<div id="noLeft-content" ng-controller="blogerListCtrl">
+<div class="profile_small">
+    <div class="left">
+       " We do not remember days, we remember moments." , 23, Kiev, Ukraine
+    </div>
+</div>
+    <div id="UserInfo_block" class="block">
+        <div id="user_info" class="no_margin">
+            <div class="user_info">
+                <div class="info_block">
+                    <div class="info_col">
+                        <div class="info_row1">
+                            <span>Family status</span>
+                        </div>
+                        <div class="info_row2">
+                            <div></div>
+                            "
+                            Single
+                            "
+                        </div>
+                    </div>
+                    <div class="info_col">
+                        <div class="info_row1">
+                            <span>Country:</span>
+                        </div>
+                        <div class="info_row2">
+                            <div></div>
+                            "
+                            Ukraine
+                            "
+                        </div>
+                    </div>
+                </div>
+                <div class="info_block">
+                    <div class="info_col">
+                        <div class="info_row1">
+                            <span>Compatibility:</span>
+                        </div>
+                        <div class="info_row2">
+                            <div></div>
+                            <a href="#">eccentricity</a>
+                            <a href="#">sparking people</a>
+                            <a href="#">talks with myself</a>
+                            <a href="#">psychology</a>
+                            <a href="#">spirituality</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="UserMessages">
+        <div id="Wall">
+            <img src="images/garcya_us_wallpapers1251.jpg" width="187" height="140">
+        </div>
+        <div id="UserLenta">
+           <div class="Text">
+               <ul>
+                   <li ng-repeat="blog in blogs">
+                       <span class="size">" added new post "
+                           <a href="#/blogs/{{blog._id}}" class="yellow">{{blog.title}}</a>
+                       </span>
+                       <p class="blog_body">{{blog.body}}</p>
+                       <span class="right">{{blog.author}}   {{blog.date | date:'dd/MM/yyyy'}}</span>
+                   </li>
+                   <div class="clear"></div>
+               </ul>
+
+
+           </div>
+
+        </div>
+
+</div>
+</div>
+
+
+
+
+

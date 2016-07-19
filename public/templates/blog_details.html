@@ -1,0 +1,17 @@
+<ul>
+    <li>
+                       <span>
+                           <p><h2>{{blog.title}}</h2></p>
+                       </span>
+        <p class="BlogBody">{{blog.body}}</p>
+        <span class="right">{{blog.author}}   {{blog.date | date:'dd/MM/yyyy'}}</span>
+    </li>
+    <div class="clear"></div>
+</ul>
+<div class="bottom_delet">
+    <div class="right">
+        <a href="#/deleteBlog">
+            <input type="button" value="Delete" ng-click="deletPost()">
+        </a>
+    </div>
+</div>

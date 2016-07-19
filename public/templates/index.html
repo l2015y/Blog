@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bloger">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-route.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.js"></script>
+    <script src="js/controller.js"></script>
+</head>
+
+<body class=" " style="width: 815px;height: 647px;
+background: url('images/custom_image_146053954345.jpg') 0% 0% repeat fixed rgb(38, 159, 228);">
+
+    <div id="header">
+        <div id="anon_reg_button" class="right" style="margin:5px 0 0 10px;">
+            <a href="#" class="btn btn14 right">
+                <span>Register</span>
+            </a>
+        </div>
+        <div id="anon_login_button" class="right" style="margin:5px 0 0 10px;">
+            <a href="#" class="btn btn14 right">
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+    <div class="sepa-60"></div>
+    <div style="margin-top: 0;"></div>
+    <div id="middle">
+<div id="all_menu" class="navi_panel">
+    <div id="menu1">
+        <img class='imag_small' src="images/0_7599_thumb50.jpg">
+        </a>
+        <ul class="right">
+            <li class="navi_items" style="position: relative;">
+                <a href="#/blog">
+                    <img class="navi_icon" src="images/pencil_48.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+        </div>
+
+    <div id="contant">
+        <ng-view></ng-view>
+
+
+<div class="clear_content"></div>
+    </div>
+
+<div id="Footer-All">
+    <div id="Footer">
+        <div class="center">
+            © 2009-2015, Worldis.me
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+

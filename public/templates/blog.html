@@ -1,0 +1,36 @@
+<h1>Write your blog</h1>
+<div class="blocList">
+    <div class="block">
+        <div class="noRight_Content">
+            <div class="blogSingl">
+                <div class="block">
+                    <div class="Title">
+                        <form class="form_of_blog" name="form_of_blog" action="">
+                        <ul>
+                            <li>
+                                <label for="author">Your name</label>
+                                <input type="text" name="author" ng-model="newBlog.author" placeholder="name" required>
+                            </li>
+                            <li>
+                                <label for="title">Title of your blog </label>
+                                <input type="text" name="title" ng-model="newBlog.title" placeholder="Title" required>
+                            </li>
+                            <li>
+                                <label for="body">Text of your blog</label>
+                                <textarea name="body" ng-model="newBlog.body" cols="40" rows="6" placeholder="message" required></textarea>
+                            </li>
+                            <li>
+                                <button class="button" type="submit" ng-click="submitPost(newBlog,form_of_blog)">Send</button>
+                            </li>
+                        </ul>
+                            </form>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
